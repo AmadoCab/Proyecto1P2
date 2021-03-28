@@ -3,9 +3,9 @@
 ## Pagina de inicio
 
 ### To do's
-[ ] Hacer el HTML
-[ ] Poner los estilos del CSS
-[ ] Tal vez hacer algo de Js
++ Hacer el HTML
++ Poner los estilos del CSS
++ Tal vez hacer algo de Js
 
 ## Alta de usuario
 
@@ -17,9 +17,9 @@
 1. Carrera (Mate o física)
 
 ### To do's
-[ ] Formulario de ingreso
-[ ] Redirigir al _home_
-[ ] Correo de verificación
++ Formulario de ingreso
++ Redirigir al _home_
++ Correo de verificación
 
 ## Login
 
@@ -28,9 +28,9 @@
 1. Contraseña
 
 ### To do's
-[ ] Formulario de ingreso
-[ ] Recuperar contraseña al correo
-[ ] Modificar datos del usuario
++ Formulario de ingreso
++ Recuperar contraseña al correo
++ Modificar datos del usuario
 
 
 
