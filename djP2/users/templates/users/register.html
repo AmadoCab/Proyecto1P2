@@ -1,0 +1,22 @@
+{% extends "mdtranslate/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div>
+    <form method="post">
+      {% csrf_token %}
+      <fieldset>
+        <legend>Join today</legend>
+        {{ form1|crispy }}
+        {{ form2|crispy }}
+      </fieldset>
+      <div>
+        <button type="submit">Sign Up</button>
+      </div>
+    </form>
+    <div>
+      <small>
+        Already have an account? <a href="{% url 'login' %}">Sign in</a>
+      </small>
+    </div>
+  </div>
+{% endblock content %}

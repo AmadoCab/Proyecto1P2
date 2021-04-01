@@ -1,0 +1,21 @@
+{% extends "mdtranslate/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div class="content-section">
+    <div class="media-body">
+      <h2 class="account-heading">{{ user.username }}</h2>
+      <p class="text-secondary">{{ user.email }}</p>
+    </div>
+    <form method="post">
+      {% csrf_token %}
+      <fieldset>
+        <legend>Profile info</legend>
+        {{ u_form|crispy }}
+        {{ p_form|crispy }}
+      </fieldset>
+      <div>
+        <button type="submit">Update</button>
+      </div>
+    </form>
+  </div>
+{% endblock content %}

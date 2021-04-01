@@ -1,0 +1,16 @@
+{% extends "mdtranslate/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <div>
+    <form method="post">
+      {% csrf_token %}
+      <fieldset>
+        <legend>Blog post</legend>
+        {{ form|crispy }}
+      </fieldset>
+      <div>
+        <button type="submit">Post</button>
+      </div>
+    </form>
+  </div>
+{% endblock content %}

@@ -1,0 +1,7 @@
+{% extends "mdtranslate/base.html" %}
+{% block content %}
+  <h2>{{ prj.author }}</h2>
+  <h3>{{ prj.title }}</h3>
+  <p><strong>{{ prj.date|date:"F d, Y" }}</strong></p>
+  <p>{{ prj.content }}</p><br>
+{% endblock content %}

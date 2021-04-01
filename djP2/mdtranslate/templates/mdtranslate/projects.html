@@ -1,0 +1,9 @@
+{% extends "mdtranslate/base.html" %}
+{% block content %}
+  <h2>{{ user.username }}</h2>
+  {% for prj in prjs %}
+    <h3><a href="{% url 'project-detail' prj.id %}">{{ prj.title }}</a> <small>{{ prj.author }}</small></h3>
+    <p><strong>{{ prj.date|date:"F d, Y" }}</strong></p>
+    <p>{{ prj.content }}</p><br>
+  {% endfor %}
+{% endblock content %}
