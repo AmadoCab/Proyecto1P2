@@ -1,9 +1,28 @@
 {% extends "mdtranslate/base.html" %}
 {% block content %}
   <h2>{{ user.username }}</h2>
-  {% for prj in prjs %}
-    <h3><a href="{% url 'project-detail' prj.id %}">{{ prj.title }}</a> <small>{{ prj.author }}</small></h3>
-    <p><strong>{{ prj.date|date:"F d, Y" }}</strong></p>
-    <p>{{ prj.content }}</p><br>
-  {% endfor %}
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Owner</th>
+          <th scope="col">Last Modified</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for prj in prjs %}
+        <tr>
+          <th scope="row">
+            <a href="{% url 'project-detail' prj.id %}">{{ prj.title }}</a>
+          </th>
+          <td class="text-muted">{{ prj.author }}</td>
+          <td class="text-muted">{{ prj.date }}</td>
+          <td>@mdo</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 {% endblock content %}

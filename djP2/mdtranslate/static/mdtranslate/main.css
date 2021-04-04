@@ -1,1 +1,12 @@
-/* el estatico */
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+/* hola */
+.table-wrapper-scroll-y {
+  display: block;
+}
+#div_id_password {
+  margin-top: 10px;
+}

@@ -1,24 +1,28 @@
-{% extends "mdtranslate/base.html" %}
+{% extends "mdtranslate/baselogout.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-  <div>
-    <form method="post">
-      {% csrf_token %}
-      <fieldset>
-        <legend>Log In</legend>
-        {{ form|crispy }}
-      </fieldset>
-      <div>
-        <button type="submit">Login</button>
+<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center g-5 py-5">
+    <div class="col-lg-7 text-center text-lg-start">
+      <h1 class="display-4 fw-bold lh-1 mb-3">Log In</h1>
+      <p class="col-lg-10 fs-4">caption</p>
+    </div>
+    <div class="col-10 mx-auto col-lg-5">
+      <form method="post" class="p-5 border rounded-3 bg-light">
+        {% csrf_token %}
+        <fieldset>
+          {{ form|crispy }}
+        </fieldset>
+        <button class="w-100 btn btn-lg btn-primary mt-3 mb-2" type="submit">Login</button>
         <small class="text-muted">
           <a href="{% url 'password_reset' %}">Forgot Password?</a>
         </small>
-      </div>
-    </form>
-    <div>
-      <small>
-        Need an account? <a href="{% url 'register' %}">Sign up</a>
-      </small>
+        <hr class="my-2">
+        <small class="text-muted">
+          Need an account? <a href="{% url 'register' %}">Sign up</a>
+        </small>
+      </form>
     </div>
   </div>
+</div>
 {% endblock content %}
