@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand mb-0 h1">
+      <a href="{% url 'user-projects' %}" class="navbar-brand mb-0 h1">
         <img class="d-inline-block align-top" src="{% static 'mdtranslate/Olive.png' %}" width="65" height="65" alt="logo">
         <p class="d-inline-block mt-4 align-center">OliveMD</p>
       </a>
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="nav-item border border-2 rounded-pill  me-2">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{% url 'profile' %}">
               Account
             </a>
           </li>
@@ -58,7 +58,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="{% url 'project-create' %}" class="nav-link active">
                   New Project
                 </a>
               </li>
@@ -85,7 +85,7 @@
             </ul>
             <hr>
             <div class="">
-              <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+              <a href="{% url 'profile' %}" class="d-flex align-items-center text-white text-decoration-none">
                 @<strong>{{ user.username }}</strong>
               </a>
             </div>

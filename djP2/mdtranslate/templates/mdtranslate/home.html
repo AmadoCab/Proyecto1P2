@@ -1,7 +1,8 @@
 {% extends "mdtranslate/baselogout.html" %}
+{% load static %}
 {% block content %}
-<div class="px-4 py-5 my-5 text-center">
-  <img class="d-block mx-auto mb-4" src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+<div class="px-4 py-5 mb-5 text-center">
+  <img class="d-block mx-auto" src="{% static 'mdtranslate/SirOlive.png' %}" alt="logo2" width="250" height="250">
   <h1 class="display-5 fw-bold">OliveMD</h1>
   <div class="col-lg-6 mx-auto">
     <p class="lead mb-4">A free Markdown online editor with extended syntax oriented to the design of online books.</p>

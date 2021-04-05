@@ -3,10 +3,28 @@
   height: 200px;
   overflow: auto;
 }
-/* hola */
 .table-wrapper-scroll-y {
   display: block;
 }
 #div_id_password {
   margin-top: 10px;
+}
+#div_id_email {
+  margin-top: 10px;
+}
+#div_id_password1 {
+  margin-top: 10px;
+}
+#div_id_password2 {
+  margin-top: 10px;
+}
+#div_id_carrera {
+  margin-top: 10px;
+}
+#div_id_gender {
+  margin-top: 10px;
+}
+/* hola */
+#div_id_new_password2 {
+  margin-top: 15px;
 }
