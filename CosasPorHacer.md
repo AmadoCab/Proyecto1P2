@@ -14,7 +14,7 @@
 1. Contraseña (con verificación doble) ✔
 1. Sexo ✔
 1. Nickname (no se repite) ✔
-1. Carrera (Mate o física) ✔
+1. Carrera (Mate o Física) ✔
 
 ### To do's
 + Formulario de ingreso ✔
